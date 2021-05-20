@@ -3,10 +3,12 @@
     flex-direction: column;
     justify-content: space-around;
     text-align: left;
+    position: relative;
 }
 
 .postpagebody{
-    min-height: 90vh;
+    min-height: 85vh;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

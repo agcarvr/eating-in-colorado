@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react';
 import {Switch, Route, Link} from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Post from './Components/PostPage/PostPage';
+import Footer from './Components/Footer/Footer';
 import './App.css';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path='/posts/:id' render={(routerProps)=> {
           return <Post routerProps={routerProps}/>} }/>
       </Switch>
+      <Footer className='footer' />
     </div>
   );
 }

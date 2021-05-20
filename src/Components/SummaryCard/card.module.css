@@ -1,7 +1,8 @@
 .cardBody{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    min-height: 30vh;
+    justify-content: center;
     border: 1px solid white;
     border-radius: 12px;
 }
@@ -10,6 +11,8 @@
     color: orange;
     font-family: 'KoHo', sans-serif; 
     text-decoration: none;
+    width: 300px;
+    align-self: center;
 }
 
 .title:hover{
@@ -18,19 +21,26 @@
 }
 
 .rating{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: orange;
+    border: 1px solid white;
+    text-align: center;
 }
 
 .summary{
     text-align: center;
+    margin: 0px 10px;
 }
 
 .desc{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .sum{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
