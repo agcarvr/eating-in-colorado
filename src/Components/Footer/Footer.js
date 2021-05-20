@@ -22,7 +22,7 @@ export default function Footer(){
     
     return(
         <div className={styles.footerbody} >
-            <a className={styles.donate} target="_blank" rel="noreferrer" href="paypal.me/erincarver926">Donate</a>
+            <a className={styles.donate} target="_blank" rel="noreferrer" href="https://paypal.me/erincarver926">Donate</a>
             <h5 className={styles.footertext}>Your Advice: {advice}</h5>
             <Link className={styles.aboutme} to='/about-the-author'>About The Author</Link>
         </div>
