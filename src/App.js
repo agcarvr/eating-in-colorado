@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import {useState, useEffect} from 'react';
+import {Switch, Route, Link} from 'react-router-dom';
+import Home from './Components/Home/Home';
+import Post from './Components/PostPage/PostPage';
 import './App.css';
 
 function App() {
+  const [postData, setPostData] = useState([]);
+  
+  const getAllPosts = async () => {
+    try {
+      const res = await fetch('https://eatincolorado-api.herokuapp.com/posts');
+      const data = await res.json();
+      setPostData(data.reverse());
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  useEffect(() => {
+    getAllPosts();
+  })
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Link className='title' to='/' ><h1 className="title">Eating In Colorado</h1></Link>
+      <Switch>
+        <Route exact path='/' render={()=> {return <Home data={postData}/>} }/>
+        <Route path='/posts/:id' render={(routerProps)=> {
+          return <Post routerProps={routerProps}/>} }/>
+      </Switch>
     </div>
   );
 }

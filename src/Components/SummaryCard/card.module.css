@@ -1,0 +1,36 @@
+.cardBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+.title{
+    color: orange;
+    font-family: 'KoHo', sans-serif; 
+    text-decoration: none;
+}
+
+.title:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.rating{
+    color: orange;
+}
+
+.summary{
+    text-align: center;
+}
+
+.desc{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sum{
+    display: flex;
+    justify-content: space-between;
+}
