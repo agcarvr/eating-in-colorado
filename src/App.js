@@ -3,6 +3,7 @@ import {Switch, Route, Link} from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Post from './Components/PostPage/PostPage';
 import Footer from './Components/Footer/Footer';
+import About from './Components/AboutMe';
 import './App.css';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route exact path='/' render={()=> {return <Home data={postData}/>} }/>
         <Route path='/posts/:id' render={(routerProps)=> {
           return <Post routerProps={routerProps}/>} }/>
+        <Route path="/about-the-author" render={() => <About />} />
       </Switch>
       <Footer className='footer' />
     </div>
