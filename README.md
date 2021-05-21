@@ -40,6 +40,8 @@ When requesting a pull, please state:
 * Fork from this page to your own github account.
 * Press the 'code' button and copy the https link to your clipboard
 * Clone the repository to your local machine, using the command 'git clone >Paste Link From Clipboard<
+* Type 'git checkout -b dev' into your terminal
 * Code as usual in your text editor (you may need to install some dependencies, such as uuid, and node modules)
-* When you are ready, use command 'git push origin main' to put your changes on github
+* When you are ready, use command 'git push origin dev' to put your changes on github
+* From your own branch, pull your dev branch into your main branch to check for merge conflicts
 * If you would like to make a pull request, see the above requirements to make one
