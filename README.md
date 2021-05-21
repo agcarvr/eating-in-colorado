@@ -1,6 +1,11 @@
-# Eating In Colorado: A food blog website
+<center><h1>Eating In Colorado: A food blog website</h1></center>
 
-## Description
+
+
+<center><h2>Description</h2></center>
+
+
+
 This project is a react app that utilizes the MERN stack with an <a href="https://github.com/agcarvr/foodblog-API" target="_blank">API that I made</a>. The objective of this web application is to share my experiences with restaraunts in Colorado.
 
 ## Planned Updates
