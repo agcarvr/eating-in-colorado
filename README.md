@@ -6,6 +6,7 @@ This project is a react app that utilizes the MERN stack with an <a href="https:
 ## Planned Updates
 * Google Translate API for non-english readers
 * filter by cuisine type on the front end
+* make homepage link more obvious
 
 ## Technologies Used
 * MongoDB
