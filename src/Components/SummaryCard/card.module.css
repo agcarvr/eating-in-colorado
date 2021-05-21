@@ -5,6 +5,9 @@
     justify-content: center;
     border: 1px solid white;
     border-radius: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-height: 50vh;
 }
 
 .title{

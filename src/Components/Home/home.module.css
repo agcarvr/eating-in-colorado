@@ -1,4 +1,11 @@
 .homebody{
     position: relative;
     min-height: 80vh;
+    max-width: 100vw;
+}
+
+@media screen and (min-width: 800px) {
+    .homebody{
+        display: flex;
+    }
 }

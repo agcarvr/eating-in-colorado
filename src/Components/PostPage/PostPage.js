@@ -23,6 +23,7 @@ export default function Post({routerProps}){
         <div className={styles.postpagebody}>
             <header>
                 <h1>{post.title}</h1>
+                <img className={styles.cover} src={post.imageURL} alt={post.dish}></img>
                 <p>Cuisine: {post.cuisine}</p>
                 <p>Dish: {post.dish}</p>
             </header>

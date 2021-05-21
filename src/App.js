@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      <Link className='title' to='/' ><h1 className="title">Eating In Colorado</h1></Link>
+      <Link className='title' to='/' ><h1>Eating In Colorado</h1></Link>
       <Switch>
         <Route exact path='/' render={()=> {return <Home data={postData}/>} }/>
         <Route path='/posts/:id' render={(routerProps)=> {
