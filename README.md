@@ -12,6 +12,9 @@ This project is a react app that utilizes the MERN stack with an <a href="https:
 * MongoDB
 * Express
 * React
+* Css Modules
+* JS
+* JSX
 * NodeJS
 * Git
 * AWS
